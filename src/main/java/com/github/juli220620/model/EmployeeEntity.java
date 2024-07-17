@@ -16,10 +16,7 @@ public class EmployeeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-
-    @Column(name = "company_id")
-    private long companyId;
+    private Long id;
 
     private String name;
     private String department;

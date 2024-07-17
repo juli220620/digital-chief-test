@@ -11,7 +11,6 @@ public class EmployeeAssembler {
         entity.setId(data.getId());
         entity.setName(data.getName());
         entity.setDepartment(data.getDepartment());
-        entity.setCompanyId(data.getCompanyId());
         entity.setSalary(data.getSalary());
 
         return entity;
@@ -28,7 +27,6 @@ public class EmployeeAssembler {
         data.setName(entity.getName());
         data.setDepartment(entity.getDepartment());
         data.setSalary(entity.getSalary());
-        data.setCompanyId(entity.getCompanyId());
 
         return data;
     }

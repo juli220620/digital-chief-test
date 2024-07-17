@@ -8,7 +8,6 @@ import lombok.Setter;
 public class EmployeeDto {
 
     private long id;
-    private long companyId;
     private String name;
     private String department;
     private double salary;

@@ -29,7 +29,7 @@ public class CompanyEntity {
     @JdbcType(PostgreSQLEnumJdbcType.class)
     private Industry industry;
 
-    @OneToMany(orphanRemoval = true)
-    @JoinColumn(name = "company_id", referencedColumnName = "id")
+    @OneToMany(orphanRemoval = true, cascade = CascadeType.ALL)
+    @JoinColumn(name = "company_id", referencedColumnName = "id", nullable = false)
     private List<EmployeeEntity> employees;
 }
